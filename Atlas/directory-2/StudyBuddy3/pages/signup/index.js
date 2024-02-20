@@ -49,7 +49,7 @@ export default function SignInForm() {
       await addDoc(collection(db, "users"), { username, password });
       setPassword("");
       setUsername("");
-
+      window.location.href = "/education";
       console.log("User added to Firestore");
     } catch (error) {
       console.error("Error adding user to Firestore:", error);

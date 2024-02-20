@@ -1,0 +1,61 @@
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.progress {
+  height: 5px;
+  background-color: #c41b6a;
+  margin-bottom: 20px;
+}
+
+.progressBar {
+  width: 30%;
+  background-color: #c41b6a;
+}
+
+.radioInput {
+  margin-bottom: 10px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-decoration: none;
+}
+
+.skip {
+  background-color: #fff;
+  color: #c41b6a;
+}
+
+.skip:hover {
+  background-color: #c41b6a;
+  color: #fff;
+}
+
+.next {
+  background-color: crimson;
+  color: #fff;
+}
+
+.next:hover {
+  background-color: #fff;
+  color: crimson;
+}
+
+.img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
