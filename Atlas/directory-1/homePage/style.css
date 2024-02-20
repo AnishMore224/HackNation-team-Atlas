@@ -226,3 +226,100 @@ body {
 #seventh:hover {
   box-shadow: 2px 2px 10px black;
 }
+.box7 {
+  text-align: center;
+}
+.box8 {
+  background-color: #f9f5f9;
+}
+.box10 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.ready {
+  background-color: rgb(186, 37, 14);
+  height: 30px;
+  width: 150px;
+  margin: auto;
+  border-radius: 4px;
+  font-size: large;
+}
+.pict {
+  background-size: cover;
+}
+#spic {
+  height: 50%;
+  width: 90%;
+}
+.box9 {
+  box-shadow: 3px 3px 3px 3px rgb(52, 50, 50);
+  border-radius: 10px;
+  height: 573.277px;
+  width: 350.795px;
+  display: inline-block;
+  margin: 10px 10px 10px 10px;
+  transition: box-shadow 0.3s ease-in-out;
+}
+.box9:hover {
+  box-shadow: 5px 5px 3px 3px rgb(52, 50, 50);
+}
+.data p {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.rm {
+  color: #f12626;
+}
+.qq {
+  font-weight: bolder;
+  color: #f12626;
+}
+
+.livApps {
+  background-image: url("images/img41.webp");
+}
+.tick {
+  font-weight: 300;
+}
+.grpFocus {
+  background-image: url("images/img51.jpg");
+}
+.disco {
+  background-image: url("images/img61.jpg");
+}
+.zoom {
+  background-image: url("images/img71.jpg");
+}
+.picx {
+  background-size: cover;
+  height: 70px;
+  width: 500px;
+  border-radius: 7px;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  margin: 10px;
+  transition: box-shadow 0.3s ease-in-out;
+}
+.picx:hover {
+  box-shadow: 3px 6px 8px black;
+}
+.abc {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.heam {
+  color: #194ee0;
+  font-weight: bolder;
+}
+.ques {
+  width: 446px;
+  height: 330px;
+}
+.pims {
+  margin-left: 10px;
+  height: 330px;
+  width: 520px;
+}
