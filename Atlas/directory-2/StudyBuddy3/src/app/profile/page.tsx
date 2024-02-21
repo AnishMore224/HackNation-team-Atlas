@@ -1,9 +1,38 @@
 import React from "react";
 import styles from "./ProfilePart.module.css";
 import Image from "next/image"; // Import Image from Next.js
+import Sidebar from "../components/sidebar";
 
 function ProfilePart() {
+  const globalStyles = `
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Open Sans", "Lato", sans-serif;
+      color: #414141;
+      background-color: #e4f1f1;
+    }
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .center {
+      margin: auto;
+      text-align: center;
+    }
+    
+  `;
   return (
+    <>
+    <style>{globalStyles}</style>
+    <div className={styles.sd}>
+      <Sidebar/>
+    </div>
     <div className={styles.outer}>
       <div className={styles.profile}>
         <div className={styles.top}>Profile</div>
@@ -50,6 +79,7 @@ function ProfilePart() {
         />
       </div>
     </div>
+    </>
   );
 }
 

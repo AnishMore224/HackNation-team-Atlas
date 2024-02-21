@@ -1,8 +1,9 @@
 import React from "react";
+import LoginForm from './signin/index'
 function HomePage() {
   return (
     <>
-      <div>HomePage</div>
+      <LoginForm />
     </>
   );
 }

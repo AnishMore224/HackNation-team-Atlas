@@ -14,7 +14,7 @@ import User from "./icons/user.js";
 
 const handleSignOut = async () => {
   await signOut();
-  window.location.href = "/signin";
+  window.location.href = "https://hack-nation-team-atlas.vercel.app/homePage/";
 };
 
 function Sidebar() {
@@ -22,16 +22,16 @@ function Sidebar() {
     <div className={classes.sidebar}>
       <div className={classes.sidebarContent}>
         <ul>
-        <li>
+          <li>
             <Link href="/profile" className={classes.link}>
-              
+
               <User />
               <p>Profile</p>
             </Link>
           </li>
           <li>
             <Link href="/dashboard" className={classes.link}>
-              
+
               <StudyRooms />
               <p>StudyRooms</p>
             </Link>
@@ -43,9 +43,9 @@ function Sidebar() {
             </Link>
           </li>
           <li>
-          <Link href="https://duo-connect.onrender.com/" className={classes.link}>
-            <DuoStudy />
-            <p>DuoStudy</p>
+            <Link href="https://duo-connect.onrender.com/" className={classes.link}>
+              <DuoStudy />
+              <p>DuoStudy</p>
             </Link>
           </li>
           <li>
@@ -55,9 +55,9 @@ function Sidebar() {
             </Link>
           </li>
           <li>
-          <Link href="/leaderboard" className={classes.link}>
-            <LeaderBoard />
-            <p>LeaderBoard</p>
+            <Link href="/leaderboard" className={classes.link}>
+              <LeaderBoard />
+              <p>LeaderBoard</p>
             </Link>
           </li>
           <li>

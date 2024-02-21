@@ -17,7 +17,7 @@ function SoloStudy() {
 
   const handleSignOut = async () => {
     await signOut();
-    window.location.href = "/signin";
+    window.location.href = "/https://hack-nation-team-atlas.vercel.app/homePage/";
   };
 
   const handleMusicToggle = () => {
