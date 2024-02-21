@@ -3,21 +3,18 @@ import Link from "next/link";
 import PLUS from "../icons/plus-icon";
 import classes from "../ui/button.module.css";
 import styles from "./HeadMainPart.module.css";
-import { getServerSession } from "next-auth/next";
 import { options } from "../../api/auth/[...nextauth]/option";
+import { getServerSession } from "next-auth/next";
+import RoomUpdate from "./RoomUpdate"
 
-async function MainPartDashboard() {
-  let user = null;
-  try {
-    const session = await getServerSession();
-    user = session?.user;
-  } catch (error) {
-    console.error("Error while fetching session:", error);
-  }
+async function MainPartDashboard({ disp }) {
+  const session = await getServerSession(options);
+  const user = session?.user;
+
 
   return (
     <>
-      {user ? (
+      {session ? (
         <div className={styles.container}>
           <div className={styles.left}>
             <div className={styles.leftContainer}>
@@ -35,11 +32,13 @@ async function MainPartDashboard() {
               <p>11270</p>
               <p>Online</p>
             </div>
-            <div className={styles.createNewRoom}>
+            <div className={styles.createNewRoom} >
+
               <button className={classes.btn}>
                 <PLUS />
                 <span>Create</span>
               </button>
+
             </div>
           </div>
         </div>
@@ -51,5 +50,3 @@ async function MainPartDashboard() {
     </>
   );
 }
-
-export default MainPartDashboard;
